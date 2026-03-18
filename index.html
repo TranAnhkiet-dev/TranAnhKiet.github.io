@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Sinh Viên</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- NÚT CHUYỂN ĐỔI DARK/LIGHT MODE -->
+    <button id="theme-toggle" class="theme-btn">🌙 Dark Mode</button>
+
+    <div class="container">
+        <!-- HEADER: CHỨA ẢNH VÀ THÔNG TIN CƠ BẢN -->
+        <header class="profile-header">
+            <!-- ẢNH ĐẠI DIỆN -->
+            <img src="images/avatar.jpg" alt="Avatar" class="profile-img">
+
+            <div class="profile-info">
+                <!-- TÊN SINH VIÊN -->
+                <h1 class="student-name">Trần Anh Kiệt</h1>
+                <!-- MÃ SỐ SINH VIÊN -->
+                <p class="student-id">MSSV: 23655711</p>
+                <!-- EMAIL DISPLAY -->
+                <p class="contact-email" style="margin-bottom: 5px; font-size: 1.1rem;">
+                    Email cá nhân: <a href="mailto:anhkiet.704409@gmail.com" style="color: var(--primary-color, #ff4d4d); text-decoration: none;">anhkiet.704409@gmail.com</a>
+                </p>
+                <p class="hobbies">Sở thích: Chụp ảnh, Nghe nhạc</p>
+            </div>
+        </header>
+
+        <main>
+            <!-- SECTION GIỚI THIỆU BẢN THÂN -->
+            <section class="about-section">
+                <h2>Giới Thiệu Bản Thân</h2>
+                <!-- NỘI DUNG GIỚI THIỆU -->
+                <p class="about-text">
+                    Xin chào! Em là sinh viên năm 3 chuyên ngành Khoa Hoc du lieu. Em đam mê lập trình Frontend và luôn mong muốn tạo ra những trải nghiệm web tốt nhất. Em có kiến thức cơ bản về HTML, CSS, JavaScript và đang tìm hiểu thêm về UI/UX Design.
+                </p>
+            </section>
+
+            <!-- SECTION LIÊN HỆ -->
+            <section class="contact-section">
+                <h2>Liên Hệ</h2>
+                <div class="contact-links">
+                    <!-- LINK GITHUB -->
+                    <a href="https://github.com/TranAnhKiet-2103" target="_blank" class="btn">GitHub</a>
+                    <!-- LINK LINKEDIN -->
+                    <a href="https://www.linkedin.com/in/kiet-anh-b305b33b7" target="_blank" class="btn">LinkedIn</a>
+                </div>
+            </section>
+        </main>
+
+        <!-- FOOTER -->
+        <footer>
+            <p>&copy; 2026 Trần Anh Kiệt. Personal Portfolio.</p>
+        </footer>
+        <!-- MODAL PHÓNG TO ẢNH -->
+        <div id="image-modal" class="modal">
+            <span class="close-modal">&times;</span>
+            <img class="modal-content" id="zoomed-img" alt="Zoomed Avatar">
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
